@@ -1,0 +1,143 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #ededed;
+}
+
+:root {
+  --main-gradient: linear-gradient(135deg, #ff00aa, #ff66cc);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--main-gradient);
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--main-gradient);
+  color: white;
+}
+
+.intro {
+  background: white;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+.picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name {
+  color: #ffffff;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.secondary {
+  background: gray;
+}
+
+.featured-projects {
+  padding: 60px 20px;
+  background: white;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+  border: 2px solid #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card span {
+  display: block;
+  margin: 10px 0;
+  color: gray;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.extra {
+  padding: 60px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.contact {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
