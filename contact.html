@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,24 +23,58 @@
 </header>
 
 <section class="contact">
-  <h2>Contact Me</h2>
+  <div class="page-intro">
+    <span class="section-kicker">Let's Connect</span>
+    <h2>Contact Me</h2>
+    <p>If you want to collaborate, discuss a project, or just say hello, send a message here.</p>
+  </div>
 
-  <p>Email: aaizaaamer3@gmail.com</p>
-  <p>GitHub: https://github.com/aaizaaamer</p>
-  <p>LinkedIn: https://linkedin.com/in/aaiza-aamer</p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-intro">
+        <h3>Reach out directly</h3>
+        <p>I am open to internships, collaborations, and creative tech opportunities that help me keep learning and building.</p>
+      </div>
 
-  
-  <form action="https://formspree.io/f/xeenjopr" method="POST">
+      <div class="contact-methods">
+        <div class="contact-method">
+          <strong>Email</strong>
+          <a href="mailto:aaizaaamer3@gmail.com">aaizaaamer3@gmail.com</a>
+        </div>
+        <div class="contact-method">
+          <strong>GitHub</strong>
+          <a href="https://github.com/aaizaaamer" target="_blank" rel="noreferrer">github.com/aaizaaamer</a>
+        </div>
+        <div class="contact-method">
+          <strong>LinkedIn</strong>
+          <a href="https://linkedin.com/in/aaiza-aamer" target="_blank" rel="noreferrer">linkedin.com/in/aaiza-aamer</a>
+        </div>
+      </div>
+    </div>
 
-  <input type="text" name="name" placeholder="Your Name" required>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xeenjopr" method="POST">
+        <label>
+          Your Name
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
 
-  <input type="email" name="email" placeholder="Your Email" required>
+        <label>
+          Your Email
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </label>
 
-  <textarea name="message" placeholder="Your Message" required></textarea>
+        <label>
+          Your Message
+          <textarea name="message" placeholder="Tell me about your idea or project" required></textarea>
+        </label>
 
-  <button type="submit" class="btn">Send</button>
-    <input type="hidden" name="_next" value="https://aaizaaamer.github.io/Portfolio/thankyou.html">
-</form>
+        <input type="hidden" name="_next" value="https://aaizaaamer.github.io/Portfolio/thankyou.html">
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-note">You will be redirected to a thank-you page after submission.</p>
+      </form>
+    </div>
+  </div>
 </section>
 
 </body>
